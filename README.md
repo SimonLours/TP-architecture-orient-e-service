@@ -7,7 +7,7 @@
 **1.** en tcp chaque client garde sa connexion donc c’est simple de suivre son état mais en http comme c’est stateless faut tout renvoyer à chaque fois  
 du coup faut redonner les infos à chaque requête comme le pseudo ou utiliser une solution comme un token ou un cookie pour garder un peu d’état
 
-**2.** ouais on peut redemander le pseudo à chaque fois dans le json de la requête mais c’est pas hyper pratique  
+**2.** oui on peut redemander le pseudo à chaque fois dans le json de la requête mais c’est pas hyper pratique  
 du coup mieux d’utiliser un cookie ou un token d’authentification pour lier les requêtes à un utilisateur  
 niveau sécurité faut faire gaffe au vol de cookie ou au token exposé et pour l’ergonomie c’est plus fluide si le client n’a pas à tout retaper
 
@@ -18,7 +18,7 @@ y a aussi les websockets mais c’est plus complexe et hors du modèle rest clas
 
 ### 3.2 Ressources, verbes, structure
 
-**4.** ouais une commande comme /join peut devenir un POST sur /join avec un body genre { "canal": "pause_cafe" }  
+**4.** oui une commande comme /join peut devenir un POST sur /join avec un body genre { "canal": "pause_cafe" }  
 ça dépend comment on modélise mais l’idée c’est que ça devienne une action sur une ressource
 
 **5.** GET /msg peut retourner tous les messages mais c’est pas optimal  
