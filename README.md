@@ -1,1 +1,1 @@
-# TP-architecture-orient-e-service
+# TP-architecture-orientee-service
